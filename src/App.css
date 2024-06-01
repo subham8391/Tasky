@@ -1,0 +1,98 @@
+/*DashBoard*/
+  .dashboard-container {
+    @apply flex h-screen;
+  }
+  .sidebar {
+    @apply w-[20%] bg-gray-100 p-4 relative;
+  }
+  .sidebar-title {
+    @apply font-bold mb-4;
+  }
+  .tab {
+    @apply p-2 flex items-center cursor-pointer mb-2 rounded;
+  }
+  .tab-active {
+    @apply bg-blue-500 text-white;
+  }
+  .tab-count {
+    @apply ml-auto bg-gray-200 text-gray-700 rounded-full px-2;
+  }
+  .user-profile {
+    @apply absolute bottom-4 left-4 flex items-center;
+  }
+  .user-avatar {
+    @apply w-10 h-10 rounded-full mr-2;
+  }
+  .user-info {
+    @apply font-bold;
+  }
+  .user-role {
+    @apply text-gray-500 text-sm;
+  }
+  .main-content {
+    @apply w-[80%] p-4 bg-gray-50;
+  }
+
+
+  /*Taskboard*/
+
+  .taskboard-container {
+    @apply mb-4 flex justify-between items-center;
+  }
+  .taskboard-title {
+    @apply font-bold text-xl;
+  }
+  .search-container {
+    @apply relative;
+  }
+  .search-input {
+    @apply border rounded px-4 py-2;
+  }
+  .search-icon {
+    @apply absolute top-2 right-2 text-gray-500;
+  }
+  .category-grid {
+    @apply grid grid-cols-4 gap-4;
+  }
+  /* .category-card {
+    @apply ;
+  } */
+  .category-header {
+    @apply flex flex-col justify-between items-center mb-2 ;
+  }
+  .category-title {
+    @apply w-full flex flex-row justify-between items-center font-semibold;
+  }
+  .ct-head{
+    @apply flex gap-2 flex-row items-center mb-5;
+  }
+  .add-task-button {
+    @apply text-white w-full flex justify-center items-center p-3 border rounded bg-white shadow;
+  }
+  .task-card {
+    @apply bg-white p-2 mb-2 rounded shadow;
+  }
+  .task-content {
+    @apply flex flex-col justify-between items-center gap-2;
+  }
+  .t-head{
+    @apply w-full flex justify-between items-center flex-row;
+  }
+  .tm-info{
+    @apply w-full flex flex-row justify-between items-center;
+  }
+  .task-members {
+    @apply flex items-center space-x-[-10px];
+  }
+  .task-member-avatar {
+    @apply w-6 h-6 rounded-full;
+  }
+  .task-complete-icon {
+    @apply text-green-500;
+  }
+  .task-meta {
+    @apply flex;
+  }
+  .task-meta-item {
+    @apply mr-2;
+  }
