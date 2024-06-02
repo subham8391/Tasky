@@ -3,13 +3,25 @@
     @apply flex h-screen;
   }
   .sidebar {
-    @apply w-[20%] bg-gray-100 p-4 relative;
+    @apply w-[25%] bg-gray-100 p-4 relative transition-all duration-300;
+  }
+  .sidebar.expanded {
+    @apply w-[25%];
+  }
+  .sidebar.collapsed {
+    @apply w-[4.2rem] pt-20;
+  }
+  .slider-header{
+    @apply font-bold pb-5 mb-3 border-b border-gray-300;
   }
   .sidebar-title {
-    @apply font-bold mb-4;
+   @apply mb-2;
   }
   .tab {
-    @apply p-2 flex items-center cursor-pointer mb-2 rounded;
+    @apply p-2 flex items-center cursor-pointer mb-2 rounded hover:bg-gray-200 transition-colors duration-300;
+  }
+  .tab-name {
+    @apply flex-grow;
   }
   .tab-active {
     @apply bg-blue-500 text-white;
@@ -29,34 +41,39 @@
   .user-role {
     @apply text-gray-500 text-sm;
   }
+  .toggle-button {
+    @apply absolute top-4 right-5 cursor-pointer text-[25px] text-gray-400;
+  }
   .main-content {
-    @apply w-[80%] p-4 bg-gray-50;
+    @apply w-[75%] p-4 bg-gray-50 overflow-y-scroll;
   }
 
-
+  .main-content.expanded {
+    @apply w-[100%];
+  }
+  .main-content.collapsed {
+    @apply w-[100%];
+  }
   /*Taskboard*/
 
   .taskboard-container {
     @apply mb-4 flex justify-between items-center;
   }
   .taskboard-title {
-    @apply font-bold text-xl;
+    @apply font-bold text-xl flex flex-row items-center gap-3;
   }
   .search-container {
-    @apply relative;
+    @apply relative ;
   }
   .search-input {
     @apply border rounded px-4 py-2;
   }
   .search-icon {
-    @apply absolute top-2 right-2 text-gray-500;
+    @apply absolute top-3 right-2 text-gray-500;
   }
   .category-grid {
     @apply grid grid-cols-4 gap-4;
   }
-  /* .category-card {
-    @apply ;
-  } */
   .category-header {
     @apply flex flex-col justify-between items-center mb-2 ;
   }
