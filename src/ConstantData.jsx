@@ -5,19 +5,28 @@ import { GrAnalytics } from 'react-icons/gr';
 import { BsGrid1X2Fill, BsWalletFill } from 'react-icons/bs';
 
 export const taskTemplates = [
-    {
-      heading: 'Design Meeting',
-      description: 'Discuss the new design trends and brainstorm ideas.'
-    },
-    {
-      heading: 'Code Review',
-      description: 'Review the latest codebase changes and ensure quality.'
-    },
-    {
-      heading: 'Project Planning',
-      description: 'Outline the next steps and allocate resources accordingly.'
-    }
-  ];
+  {
+    heading: 'Design Meeting',
+    description: 'Discuss the new design trends and brainstorm ideas.'
+  },
+  {
+    heading: 'Code Review',
+    description: 'Review the latest codebase changes and ensure quality.'
+  },
+  {
+    heading: 'Project Planning',
+    description: 'Outline the next steps and allocate resources accordingly.'
+  },
+  {
+    heading: 'Sprint Retrospective',
+    description: 'Reflect on the last sprint and identify areas for improvement.'
+  },
+  {
+    heading: 'Client Presentation',
+    description: 'Present the project progress to the client and gather feedback.'
+  }
+];
+
 
   export const categories = [
     { name: 'Backlog Tasks', key: 'backlog', bg: 'bg-orange-200', text: 'text-orange-800' },

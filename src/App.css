@@ -1,3 +1,18 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;  
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;  
+  border-radius: 10px;
+}
+
+
+
 /*DashBoard*/
   .dashboard-container {
     @apply flex h-screen;
@@ -15,19 +30,19 @@
     @apply font-bold pb-5 mb-3 border-b border-gray-300;
   }
   .sidebar-title {
-   @apply mb-2;
+   @apply mb-2 font-semibold;
   }
   .tab {
     @apply p-2 flex items-center cursor-pointer mb-2 rounded hover:bg-gray-200 transition-colors duration-300;
   }
   .tab-name {
-    @apply flex-grow;
+    @apply flex-grow text-black font-semibold;
   }
   .tab-active {
-    @apply bg-blue-500 text-white;
+    @apply bg-indigo-100 text-blue-500;
   }
   .tab-count {
-    @apply ml-auto bg-gray-200 text-gray-700 rounded-full px-2;
+    @apply ml-auto bg-gray-200 text-blue-500 rounded-full px-2 font-semibold;
   }
   .user-profile {
     @apply absolute bottom-4 left-4 flex items-center;
@@ -45,7 +60,7 @@
     @apply absolute top-4 right-5 cursor-pointer text-[25px] text-gray-400;
   }
   .main-content {
-    @apply w-[75%] p-4 bg-gray-50 overflow-y-scroll;
+    @apply w-[67%] p-4 bg-gray-50 overflow-y-scroll;
   }
 
   .main-content.expanded {
@@ -53,6 +68,22 @@
   }
   .main-content.collapsed {
     @apply w-[100%];
+  }
+
+  .users{
+    @apply w-[8%] h-full border-l border-gray-300 flex flex-col justify-between;
+  }
+  .uta-btn{
+    @apply w-full h-14 border-b border-gray-300 flex justify-center items-center font-bold text-gray-400 text-[20px];
+  }
+  .uba-btn{
+    @apply w-full h-14 border-t border-gray-300 flex justify-center items-center text-gray-400 text-[20px];
+  }
+  .user-profile-image{
+    @apply w-full flex flex-col justify-center items-center gap-2;
+  }
+  .users-image {
+    @apply w-10 h-10 rounded-full;
   }
   /*Taskboard*/
 
@@ -112,4 +143,21 @@
   }
   .task-meta-item {
     @apply mr-2;
+  }
+
+  /*Comming Soon*/
+
+  .commingsoon-section {
+    @apply w-full h-auto flex justify-center items-center p-8;
+  }
+  
+  .commingsoon-container {
+    @apply  w-full h-auto flex flex-col justify-center items-center;
+  }
+  
+  .commingsoon-container img {
+    @apply h-[23rem];
+  }
+  .commingsoon-container h2,.commingsoon-container h1{
+    @apply text-[25px] font-bold;
   }
