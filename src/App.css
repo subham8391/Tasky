@@ -2,17 +2,6 @@
   display: none;
 }
 
-::-webkit-scrollbar-track {
-  background: #f1f1f1;  
-}
-
-::-webkit-scrollbar-thumb {
-  background: #888;  
-  border-radius: 10px;
-}
-
-
-
 /*DashBoard*/
   .dashboard-container {
     @apply flex h-screen;

@@ -6,9 +6,13 @@ import { tabs } from '../../ConstantData';
 
 const Sidebar = ({ activeTab, setActiveTab, isSidebarExpanded, setIsSidebarExpanded }) => {
 
+  const toggleSidebar = () => {
+    setIsSidebarExpanded(!isSidebarExpanded);
+  };
+
   return (
     <div className={`sidebar ${isSidebarExpanded ? 'expanded' : 'collapsed'}`}>
-        {isSidebarExpanded && (<div className="slider-header">DASHBOARDS</div>)}
+      {isSidebarExpanded && (<div className="slider-header">DASHBOARDS</div>)}
       {isSidebarExpanded && (<div className="sidebar-title">DASHBOARDS</div>)}
       {tabs.map((tab) => (
         <SidebarTab
@@ -34,7 +38,7 @@ const Sidebar = ({ activeTab, setActiveTab, isSidebarExpanded, setIsSidebarExpan
       </div>
       <div
         className="toggle-button"
-        onClick={() => setIsSidebarExpanded(!isSidebarExpanded)}
+        onClick={toggleSidebar}
       >
         {isSidebarExpanded ? <FaAngleLeft /> : <FaBars />}
       </div>
